@@ -1,1 +1,123 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La página de Álvaro</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 45px;
+            color: #38bdf8;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #cbd5e1;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .trabajos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 15px;
+            width: 250px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            background: #334155;
+        }
+
+        .card h2 {
+            color: #38bdf8;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #1e293b;
+            padding: 20px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>¡Hola, soy Álvaro!</h1>
+        <p>Esta es mi página web para colgar mis trabajos de Tecnología.</p>
+    </header>
+
+    <section>
+        <h2>Sobre mí</h2>
+        <p>
+            Bienvenido a mi página web. Aquí iré publicando los proyectos,
+            trabajos y actividades que haga en la asignatura de Tecnología.
+        </p>
+    </section>
+
+    <section>
+        <h2>Mis trabajos</h2>
+
+        <div class="trabajos">
+
+            <div class="card">
+                <h2>Trabajo 1</h2>
+                <p>Mi primer proyecto de Tecnología.</p>
+                <a href="#">Ver trabajo</a>
+            </div>
+
+            <div class="card">
+                <h2>Trabajo 2</h2>
+                <p>Un nuevo proyecto que iré añadiendo.</p>
+                <a href="#">Ver trabajo</a>
+            </div>
+
+            <div class="card">
+                <h2>Trabajo 3</h2>
+                <p>Próximamente subiré más trabajos.</p>
+                <a href="#">Ver trabajo</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Álvaro | Mi página de Tecnología</p>
+    </footer>
+
+</body>
+</html>
+
+
+
