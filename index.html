@@ -7,20 +7,25 @@
     <title>La página de Álvaro</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: #0f172a;
             color: white;
-            text-align: center;
         }
 
         header {
             background: #1e293b;
             padding: 60px 20px;
+            text-align: center;
         }
 
-        h1 {
+        header h1 {
             font-size: 45px;
             color: #38bdf8;
         }
@@ -32,6 +37,11 @@
 
         section {
             padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #38bdf8;
         }
 
         .trabajos {
@@ -63,9 +73,46 @@
             text-decoration: none;
         }
 
+        .boton {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .detalle-trabajo {
+            background: #111c33;
+            padding: 50px 20px;
+        }
+
+        .detalle-trabajo h1 {
+            color: #38bdf8;
+            font-size: 35px;
+        }
+
+        .detalle-trabajo p {
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+            color: #cbd5e1;
+        }
+
+        .detalle-trabajo img {
+            width: 95%;
+            max-width: 1100px;
+            border-radius: 12px;
+            border: 2px solid #334155;
+            margin: 20px auto;
+            display: block;
+        }
+
         footer {
             background: #1e293b;
             padding: 20px;
+            text-align: center;
             color: #94a3b8;
         }
     </style>
@@ -73,51 +120,105 @@
 
 <body>
 
-    <header>
+    <!-- PORTADA -->
+    <header id="inicio">
         <h1>¡Hola, soy Álvaro!</h1>
-        <p>Esta es mi página web para colgar mis trabajos de Tecnología.</p>
+        <p>Esta es mi página para colgar mis trabajos de Tecnología.</p>
     </header>
 
+    <!-- SOBRE MÍ -->
     <section>
         <h2>Sobre mí</h2>
         <p>
-            Bienvenido a mi página web. Aquí iré publicando los proyectos,
-            trabajos y actividades que haga en la asignatura de Tecnología.
+            Bienvenido a mi página web. Aquí publicaré los proyectos,
+            trabajos y actividades que realice en la asignatura de Tecnología.
         </p>
     </section>
 
-    <section>
+    <!-- TRABAJOS -->
+    <section id="trabajos">
         <h2>Mis trabajos</h2>
 
         <div class="trabajos">
 
+            <!-- TRABAJO 1 -->
             <div class="card">
                 <h2>Trabajo 1</h2>
-                <p>Mi primer proyecto de Tecnología.</p>
-                <a href="#">Ver trabajo</a>
+                <p>Programación de un LED con Arduino.</p>
+                <a class="boton" href="#trabajo1">Ver trabajo</a>
             </div>
 
+            <!-- TRABAJO 2 -->
             <div class="card">
                 <h2>Trabajo 2</h2>
-                <p>Un nuevo proyecto que iré añadiendo.</p>
-                <a href="#">Ver trabajo</a>
+                <p>Próximamente añadiré este trabajo.</p>
+                <a class="boton" href="#trabajo2">Ver trabajo</a>
             </div>
 
+            <!-- TRABAJO 3 -->
             <div class="card">
                 <h2>Trabajo 3</h2>
-                <p>Próximamente subiré más trabajos.</p>
-                <a href="#">Ver trabajo</a>
+                <p>Próximamente añadiré este trabajo.</p>
+                <a class="boton" href="#trabajo3">Ver trabajo</a>
             </div>
 
         </div>
     </section>
 
+    <!-- APARTADO DEL TRABAJO 1 -->
+    <section id="trabajo1" class="detalle-trabajo">
+
+        <h1>Trabajo 1: LED intermitente</h1>
+
+        <p>
+            En este trabajo he programado un LED para que se encienda
+            y se apague cada segundo utilizando Arduino.
+            He realizado el programa mediante bloques y después
+            he comprobado el código generado.
+        </p>
+
+        <h2>Programación por bloques</h2>
+
+        <img src="imagenes/trabajo1-bloques.png"
+             alt="Programa de Arduino realizado mediante bloques">
+
+        <h2>Código Arduino</h2>
+
+        <img src="imagenes/trabajo1-codigo.png"
+             alt="Código de Arduino para encender y apagar un LED">
+
+        <a class="boton" href="#inicio">Volver al inicio</a>
+
+    </section>
+
+    <!-- TRABAJO 2 -->
+    <section id="trabajo2" class="detalle-trabajo">
+
+        <h1>Trabajo 2</h1>
+
+        <p>Este apartado estará disponible próximamente.</p>
+
+        <a class="boton" href="#trabajos">Volver a los trabajos</a>
+
+    </section>
+
+    <!-- TRABAJO 3 -->
+    <section id="trabajo3" class="detalle-trabajo">
+
+        <h1>Trabajo 3</h1>
+
+        <p>Este apartado estará disponible próximamente.</p>
+
+        <a class="boton" href="#trabajos">Volver a los trabajos</a>
+
+    </section>
+
+    <!-- PIE DE PÁGINA -->
     <footer>
         <p>© 2026 Álvaro | Mi página de Tecnología</p>
     </footer>
 
 </body>
 </html>
-
 
 
